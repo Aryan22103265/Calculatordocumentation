@@ -1,0 +1,79 @@
+Open Source Project Link - https://github.com/LucioFex/Simple-Web-Calculator
+
+
+1. 
+HTML Structure:
+DOCTYPE and HTML tags: Define the HTML5 document.
+Head:
+Meta Charset: Specifies the character encoding.
+Title: Title of the webpage.
+Link Tags: Links to CSS stylesheets (local and external), a font library, and a favicon.
+Body:
+Container: Contains the main section and footer.
+Main Section: Includes a header with a title, an image, and the calculator interface.
+Calculator Interface: Divided into a screen (for displaying numbers), a functional container (for special buttons), a numbers container (for digits), and an arithmetic container (for arithmetic operations).
+Footer: Contains additional information, links, and icons.
+
+
+2.
+JavaScript Structure:
+Constants and Variables:
+
+Define elements, colors, calculator values, keyboard symbols, and state variables.
+Function Definitions:
+
+setUp():
+
+Prepares the calculator for usage by adding event listeners to buttons, setting up the footer width, and starting the color-changing title background.
+multiColor(title):
+
+Changes the background color of the title every 4 seconds.
+buttonAction(input):
+
+Assigns click events to calculator buttons, differentiating between special and normal buttons.
+arithmeticSection(total, symbol, number):
+
+Performs arithmetic operations based on the symbol provided.
+scientificSection(symbol):
+
+Performs scientific operations like square root, cube root, and factorial.
+calculateValues(history):
+
+Processes the history of inputs to compute the result using arithmetic and scientific operations.
+wrongInput(number, symbol):
+
+Checks for invalid inputs and returns error messages.
+topScreenPrint(total):
+
+Updates the top screen with the current calculation process.
+screenModification(total):
+
+Updates both top and bottom screens with the current state of the calculation.
+processValue(sym):
+
+Processes the input symbol, updating the record and screens accordingly.
+givenResultCheck(sym):
+
+Resets the calculator if the last input was a result and the next input is a number.
+bottomScreenPrint(sym):
+
+Updates the bottom screen with the input number or symbol, handling special cases like clear, delete, and negate.
+skullPosition():
+
+Adjusts the position and size of the skull image based on the screen's content width.
+keyboardButtons(event):
+
+Maps keyboard inputs to calculator buttons.
+helpSection(event):
+
+Handles the "terms and conditions" and "privacy policy" buttons, showing alerts and opening new pages.
+Event Listener:
+
+Adds an event listener to execute the setUp() function when the window loads.
+
+
+3.
+Summary:
+The HTML defines the structure and appearance of the calculator.
+The JavaScript handles the functionality, including event handling, arithmetic and scientific calculations, screen updates, and UI adjustments.
+The calculator supports basic arithmetic, some scientific operations, and interaction via mouse clicks and keyboard inputs.
